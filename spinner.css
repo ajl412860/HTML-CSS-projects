@@ -1,0 +1,57 @@
+* {
+  background-color: orange;
+}
+
+.sqbk {
+  position:relative;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  transform: rotate(-90deg);
+  animation-name: transr;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+   animation-timing-function: linear; 
+}
+
+ .sqft {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  transform: rotate(180deg);
+  animation-name: trans;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+ /*  animation-timing-function: linear; */
+ 
+
+}
+
+@keyframes trans {
+  from{
+    transform: rotate(0);
+  }to{
+    transform: rotate(359);
+  }
+  
+}
+
+@keyframes transr {
+  from{
+    transform: rotate(0);
+  }to{
+    transform: rotate(359);
+  }
+  
+}
+
+
+
+ .parent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:20%;
+   padding: 40px;
+}
